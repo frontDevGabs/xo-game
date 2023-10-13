@@ -78,9 +78,9 @@ function resetGame() {
 
 function gameOver(a) {
   var gameOverAlertElement =
-    "<b>GAME OVER </b><br><br> Player " +
+    "<b>Fim de Jogo </b><br><br> Jogador " +
     span[a].dataset.player.toUpperCase() +
-    " Win !!! <br><br>" +
+    " Ganhou !!! <br><br>" +
     restartButton;
   var div = document.createElement("div");
   div.className = "alert";
@@ -91,7 +91,7 @@ function gameOver(a) {
 }
 
 function draw() {
-  var drawAlertElement = "<b>DRAW!!!</b><br><br>" + restartButton;
+  var drawAlertElement = "<b>Empate!!!</b><br><br>" + restartButton;
   var div = document.createElement("div");
   div.className = "alert";
   div.innerHTML = drawAlertElement;
